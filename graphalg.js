@@ -39,3 +39,25 @@ console.log("-- DFS --")
 deptFirstPrint(graph, 'a'); // abdfce and acebdf both valid
 console.log("-- BFS --")
 breadthFirstPrint(graph, 'a') // acbedf
+
+// hasPath Problem = Depth First Traversal
+const graphForHasPathProblem = {
+    'f': ['g', 'i'],
+    'g': ['h'],
+    'h': [],
+    'i': ['g', 'k'],
+    'j': ['i'],
+    'k': []
+}
+const hasPath = (graph, src, dst) => {
+    if(src === dst) return true;
+    for(let neigbor of graph[src]){
+        if(hasPath(graph, neigbor, dst) === true){
+            return true
+        }
+    }
+
+    return false
+}
+
+console.log('f to k hasPath? ', hasPath(graphForHasPathProblem, 'f', 'k'))
