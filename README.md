@@ -36,3 +36,13 @@ node hasPath.js
 ```
 node hasPathUndir.js
 ```
+
+- To find count of components in a given graph, run:
+```
+node count-conn.js
+```
+
+- To find the size of largest component in a given graph, run:
+```
+node largest-component.js
+```

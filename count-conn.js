@@ -24,6 +24,7 @@ const connectedComponentsCount = (graph) => {
     return count
 }
 
+//dfs
 const explore = (graph, current, visited) => {
     if(visited.has(String(current))) return false
 
