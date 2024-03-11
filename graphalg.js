@@ -40,7 +40,8 @@ deptFirstPrint(graph, 'a'); // abdfce and acebdf both valid
 console.log("-- BFS --")
 breadthFirstPrint(graph, 'a') // acbedf
 
-// hasPath Problem = Depth First Traversal
+console.log("-- hasPath Problem --")
+
 const graphForHasPathProblem = {
     'f': ['g', 'i'],
     'g': ['h'],
@@ -49,11 +50,27 @@ const graphForHasPathProblem = {
     'j': ['i'],
     'k': []
 }
+// hasPath Problem = Depth First Stack
+// const hasPath = (graph, src, dst) => {
+//     if(src === dst) return true;
+//     for(let neigbor of graph[src]){
+//         if(hasPath(graph, neigbor, dst) === true){
+//             return true
+//         }
+//     }
+
+//     return false
+// }
+
+// hasPath Problem = Breadth First Stack 
 const hasPath = (graph, src, dst) => {
-    if(src === dst) return true;
-    for(let neigbor of graph[src]){
-        if(hasPath(graph, neigbor, dst) === true){
-            return true
+    const queue = [src]
+
+    while (queue.length > 0) {
+        const current = queue.shift();
+        if(current === dst) return true;
+        for(let neighbor of graph[current]){
+            queue.push(neighbor)
         }
     }
 
