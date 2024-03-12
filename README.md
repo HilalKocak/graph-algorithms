@@ -51,3 +51,8 @@ node largest-component.js
 ```
 node shortest-path.js
 ```
+
+- To count islands of 2D matrix(grid), run:
+```
+node island-count.js
+```
