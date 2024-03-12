@@ -46,3 +46,8 @@ node count-conn.js
 ```
 node largest-component.js
 ```
+
+- To solve shortest path problem
+```
+node shortest-path.js
+```
