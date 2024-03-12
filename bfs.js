@@ -1,3 +1,5 @@
+console.log("-- Breadth First Search--")
+
 const graph = {
     a: ['c', 'b'],
     b: ['d'],

@@ -1,3 +1,5 @@
+console.log("-- Depth First Search without Recursion--")
+
 const graph = {
     a: ['c', 'b'],
     b: ['d'],

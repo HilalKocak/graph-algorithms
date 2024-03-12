@@ -1,10 +1,10 @@
 ### Graph Algorithms
 * Directed graphs
-* Traverse a graph using
-- Depth-First Search and Breadth-First Search
+* Traverse a graph using Depth-First Search and Breadth-First Search
 * hasPath Problem: Is there a way to determine if there's a path from one node to another with depth-first stack and breadth-first queue ın directed graphs and undirected graphs
-
 * Connected components count problem 
+* Count island problem 
+* Finding the size of the min island problem
 
 - To clone this project, run:
 ```
