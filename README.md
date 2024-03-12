@@ -56,3 +56,8 @@ node shortest-path.js
 ```
 node island-count.js
 ```
+
+- To find the size of the minimum island, run:
+```
+node min-island.js
+```

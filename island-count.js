@@ -49,4 +49,4 @@ const island = [
 ['W', 'W', 'W', 'L', 'L', 'W']
 ]//7
 
-console.log('islan count: ', islandCount(island))
+console.log('Islands count: ', islandCount(island))
