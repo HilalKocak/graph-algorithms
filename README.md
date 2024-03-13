@@ -1,12 +1,20 @@
 ### Graph Algorithms
-* Directed graphs
-* Traverse a graph using Depth-First Search and Breadth-First Search
-* hasPath Problem: Is there a way to determine if there's a path from one node to another with depth-first stack and breadth-first queue ın directed graphs and undirected graphs
-* Connected components count problem 
-* Count island problem 
-* Finding the size of the min island problem
+##### Depth-First Search (DFS)
+- dfs-recursive.js: Implements DFS using recursion.
+- dfs.js: Implements DFS without recursion, using a stack.
+##### Breadth-First Search (BFS)
+- bfs.js: Implements BFS using a queue.
+##### Path Existence in Graphs
+- hasPath.js: Determines if there is a path between two nodes in a directed graph.
+- hasPathUndir.js: Determines if there is a path between two nodes in an undirected graph.
+##### Shortest Path
+- shortest-path.js: Finds the shortest path between two nodes in a graph.
+##### Island Problems
+- island-count.js: Counts the number of islands in a grid.
+- largest-component.js: Finds the size of the largest island in a grid.
+- min-island.js: Finds the size of the smallest island in a grid.
 
-- To clone this project, run:
+To clone this project, run:
 ```
 git clone https://github.com/HilalKocak/graph-algorithms.git
 
