@@ -36,4 +36,24 @@ const hasPath = (graph, src, dst, visited = new Set()) => {
 
     return false
 }
+
+// const undirectedPath = (edges, nodeA, nodeB) => {
+//   let graph = buildGraph(edges)
+//   let visited = new Set()
+//   let queue = [nodeA]
+//   while(queue.length > 0){
+//     let current = queue.shift()
+//     if(!visited.has(current)){
+//       visited.add(current)
+//       if(current === nodeB) return true
+//     console.log('dfdf', current)
+//     for(let neighbor of graph[current]){
+//       queue.push(neighbor)
+//     }
+//     }
+//   }
+  
+//   return false
+  
+// };
 console.log('undirectedPath ',undirectedPath(edges, 'o', 'j'))
