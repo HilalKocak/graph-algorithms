@@ -20,7 +20,7 @@ const closestCarrot = (grid, startRow, startCol) => {
       for(let [dr, dc] of directions){
         let newRow = dr+r
         let newCol = dc+c
-        if(newRow >= 0 && newRow < grid.length && newCol>=0 && newCol<grid[0].length && !visited.has(`${newRow},${newCol}`))
+        if(newRow >= 0 && newRow < grid.length && newCol>=0 && newCol<grid[0].length && grid[newRow][newCol] !== 'X' && !visited.has(`${newRow},${newCol}`))
         {
           if(grid[newRow][newCol] === 'O'){
             visited.add(`${newRow},${newCol}`)
