@@ -11,7 +11,7 @@ const hasCycle = (graph) => {
     
     return false
   };
-  
+          
   const cycleDetect = (graph, node, visiting, visited) => {
     if(visited.has(node)) return false
     if(visiting.has(node)) return true // there is a cycle
